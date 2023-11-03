@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "arlatentsde"
+version = "0.2.0"
+description = "Amortized Reparametrization for Continuous Time Autoencoders (ARCTA)"
+authors = ["Kevin Course", "Prasanth B. Nair"]
+license = "GNUv3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.12"
+jaxtyping = "^0.2.14"
+beartype = "^0.12.0"
+pytorch-lightning = "^2.0.1.post0"
+tensorboard = "^2.12.1"
+torchsde = "^0.2.5"
+torchdiffeq = "^0.2.3"
+torch = {version = "^2.0.1+cu118", source = "pytorch-gpu-src"}
+torchvision = {version = "^0.15.2+cu118", source = "pytorch-gpu-src"}
+torchaudio = {version = "^2.0.2+cu118", source = "pytorch-gpu-src"}
+
+[tool.poetry.group.dev.dependencies]
+pytest-xdist = "^3.2.1"
+black = "^23.1.0"
+pyright = "^1.1.300"
+ruff = "^0.0.259"
+ruff-lsp = "^0.0.24"
+debugpy = "^1.6.6"
+scikit-learn = "^1.2.2"
+
+[tool.poetry.group.exps.dependencies]
+scipy = "^1.10.1"
+matplotlib = "^3.7.1"
+tqdm = "^4.65.0"
+seaborn = "^0.13.0"
+repopacker = "^0.2.0"
+
+
+[[tool.poetry.source]]
+name = "pytorch-gpu-src"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+ignore = ["F722"]

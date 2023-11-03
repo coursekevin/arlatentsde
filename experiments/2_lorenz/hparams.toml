@@ -1,0 +1,14 @@
+batch_size = 128
+M = 1
+n_warmup = 100
+n_samples = 10
+latent_dim = 3
+lr = 1e-1
+lr_sched_freq = 1000
+n_mc_quad = 100
+kernel_len_init = 1e-2 # kernel
+kernel_var_init = 1e-5
+brownian_mu_prior = 1e-5 # brownian
+brownian_sigma_prior = 1e-5
+brownian_mu_init = 1e-5
+brownian_sigma_init = 1e-5
