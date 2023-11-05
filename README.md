@@ -1,27 +1,37 @@
 # Amortized reparametrization: Efficient and Scalable Variational Inference for Latent SDEs
 
+Accompanying code for the [NeurIPS 2023
+paper](https://openreview.net/forum?id=5yZiP9fZNv)
+by Kevin Course and Prasanth B. Nair.
+
+**Tutorials and documentation coming soon.**
+
 ## 1. Installation
+
+### Installing the package
+
+The package can be installed through PyPI:
+
+```bash
+pip install arlatentsde
+```
+
+### Reproducing the experiment environment
 
 We ran experiments on a Linux machine with CUDA 11.8.
 We used [poetry](https://github.com/python-poetry/poetry) to manage dependencies.
 
 If you prefer a different environment manager, all dependencies are listed
-in the `pyproject.toml`. Otherwise, you can reproduce our environment as follows:
+in the `pyproject.toml`.
 
-1. If you don't have an environment with CUDA 11.8 installed, you can initialize a
-   conda environment with necessary dependencies using [conda](https://docs.conda.io/en/latest/):
+To reproduce the experiment environment, first navigate to branch named
+`neurips-freeze`.
 
-```bash
-conda env create -f base-env.yml
-```
-
-2. To install all necessary dependencies required to run experiments run,
+Then install all optional dependencies required to run experiments,
 
 ```bash
 poetry install --with dev,exps
 ```
-
-This will install dependencies according to the lock file `poetry.lock`.
 
 ## 2. Usage
 
@@ -50,3 +60,8 @@ The choices of experiments and actions are provided below:
   - `get-data`: Download / generate data
   - `train`: Train models
   - `post-process`: Post process for plots and tables
+
+## 3. Reference
+
+Course, K., Nair, P.B. Amortized Reparametrization: Efficient and Scalable Variational Inference for Latent SDEs.  
+In Proc. Advances in Neural Information Processing Systems, (2023).
