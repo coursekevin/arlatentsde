@@ -10,7 +10,7 @@ by Kevin Course and Prasanth B. Nair.
 
 ### Installing the package
 
-The package can be installed through PyPI:
+The package can be installed from PyPI:
 
 ```bash
 pip install arlatentsde
@@ -71,3 +71,14 @@ The choices of experiments and actions are provided below:
 
 Course, K., Nair, P.B. Amortized Reparametrization: Efficient and Scalable Variational Inference for Latent SDEs.  
 In Proc. Advances in Neural Information Processing Systems, (2023).
+
+```
+@inproceedings{
+course2023amortized,
+title={Amortized Reparametrization: Efficient and Scalable Variational Inference for Latent {SDE}s},
+author={Kevin Course and Prasanth B. Nair},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=5yZiP9fZNv}
+}
+```
