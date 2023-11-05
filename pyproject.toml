@@ -14,9 +14,9 @@ pytorch-lightning = "^2.0.1.post0"
 tensorboard = "^2.12.1"
 torchsde = "^0.2.5"
 torchdiffeq = "^0.2.3"
-torch = {version = "^2.0.1+cu118", source = "pytorch-gpu-src"}
-torchvision = {version = "^0.15.2+cu118", source = "pytorch-gpu-src"}
-torchaudio = {version = "^2.0.2+cu118", source = "pytorch-gpu-src"}
+torch = "^2.0.1"
+torchvision = "^0.15.2"
+torchaudio = "^2.0.2"
 
 [tool.poetry.group.dev.dependencies]
 pytest-xdist = "^3.2.1"
