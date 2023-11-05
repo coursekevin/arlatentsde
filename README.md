@@ -4,7 +4,7 @@ Accompanying code for the [NeurIPS 2023
 paper](https://openreview.net/forum?id=5yZiP9fZNv)
 by Kevin Course and Prasanth B. Nair.
 
-**Tutorials and documentation coming soon.**
+**Tutorials and documentation coming soon!**
 
 ## 1. Installation
 
@@ -26,11 +26,17 @@ in the `pyproject.toml`.
 
 To reproduce the experiment environment, first navigate to branch named
 `neurips-freeze`.
-
 Then install all optional dependencies required to run experiments,
 
 ```bash
 poetry install --with dev,exps
+```
+
+To download all pretrained models, datasets, and figures we use [repopacker](https://github.com/coursekevin/repopacker):
+
+```bash
+repopacker download models-data-figs.zip
+repopacker unpack models-data-figs.zip
 ```
 
 ## 2. Usage

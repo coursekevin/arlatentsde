@@ -1019,7 +1019,7 @@
   ],
   "config": {
     "gitignore": true,
-    "downloadpath": "",
+    "downloadpath": "https://zenodo.org/records/10073515/files/data-models-figs.zip?download=1",
     "version_warning": false,
     "checksum": true,
     "sha256": "c388dd7a08a0c1f06213030afb5710cf4a4e8524f35c0f7feba3e6868acecccc",
